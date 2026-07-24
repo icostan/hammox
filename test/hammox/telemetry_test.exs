@@ -1,10 +1,6 @@
-defmodule HammoxTest do
+defmodule Hammox.TelemetryTest do
   # false because we set application state
   use ExUnit.Case, async: false
-
-  import Hammox
-
-  defmock(TestMock, for: Hammox.Test.Behaviour)
 
   describe "works with telemetry disabled as a default" do
     setup do
